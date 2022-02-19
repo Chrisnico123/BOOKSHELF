@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster&display=swap");
+* {
+  color: black;
+  font-family: "Architects Daughter", cursive;
+  font-size: 1rem;
+}
+.container-old {
+  width: 22rem;
+  margin: auto;
+}
+.tag svg {
+  transform: rotate(45deg);
+}
+.plus {
+  margin-right: 5px;
+}
+.add-data {
+  background-color: #ecf7fb;
+}
+.search {
+  margin-left: 5px;
+}
+body {
+  background-color: #d4eff6;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.search input {
+  height: 1.5rem;
+  width: 18rem;
+  border-radius: 30px;
+}
+
+.add-data {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.add-book {
+  text-align: center;
+}
+#form {
+  display: grid;
+}
+.form {
+  padding: 10px;
+}
+#button-plus {
+  cursor: pointer;
+}
+#check {
+  display: inline-flex;
+  margin-bottom: 10px;
+}
+.form-input {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#kirim {
+  margin-bottom: 10px;
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #ecf7fb;
+}
+td,
+th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+@media (min-width: 1200px) {
+  * {
+    text-align: center;
+  }
+  .container-old {
+    width: 50rem;
+  }
+}

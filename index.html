@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book-Shelf</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-old">
+      <div class="navbar">
+        <div class="search"><input type="text" placeholder="search" id="search" /></div>
+        <div class="plus" id="tag">
+          <svg id="button-plus" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+          </svg>
+        </div>
+      </div>
+      <div class="add-data" id="add-data" hidden>
+        <h2 class="add-book">Tambah Buku</h2>
+        <form id="form">
+          <label class="form" for="judul">Judul</label>
+          <input id="judul" class="form-input" type="text" name="judul" required /><br />
+          <label class="form" for="penulis">penulis</label>
+          <input id="penulis" class="form-input" type="text" name="penulis" required /><br />
+          <label class="form" for="tahun">Tahun Terbit</label>
+          <input id="tahun" class="form-input" type="text" name="tahun" required /><br />
+          <div class="check">
+            <label class="form" for="ceklis">Tandai Sudah Dibaca</label>
+            <input class="" type="checkbox" name="ceklis" id="check" />
+          </div>
+          <input type="submit" value="Tambahkan Buku" name="Tambahkan Buku" class="btn-submit" />
+        </form>
+      </div>
+      <div class="container">
+        <div class="before">
+          <h2>Belum Dikerjakan</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Judul</th>
+                <th>Penulis</th>
+                <th>Tahun</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="belumselesai"></tbody>
+          </table>
+        </div>
+        <div class="after">
+          <h2>Selesai Dikerjakan</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Judul</th>
+                <th>Penulis</th>
+                <th>Tahun</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="selesai"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="js/tools/data.js"></script>
+    <script src="js/tools/index.js"></script>
+    <script src="js/tools/script.js"></script>
+  </body>
+</html>
